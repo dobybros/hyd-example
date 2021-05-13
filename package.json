@@ -1,48 +1,47 @@
 {
-  "name": "hyd-example",
+  "name": "tc-conference-new",
   "version": "1.0.0",
-  "description": "A project that describes the development direction of the hyd-framework",
+  "entry": "src/entry/index.js",
+  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-web": "webpack-dev-server --port=8888 --open localhost:8888 --mode development --conf_target web",
-    "dev-client": "webpack-dev-server --port=8888 --open localhost:8888 --mode development --conf_target client",
-    "build-web": "",
-    "build-win-clientx64": "",
-    "build-win-clientx32": "",
-    "build-mac-client": ""
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dobybros/hyd-example.git"
+    "url": "git+https://github.com/dobybros/tc-conference-new.git"
   },
-  "keywords": [
-    "hyd-framework",
-    "hyd"
-  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dobybros/hyd-example/issues"
+    "url": "https://github.com/dobybros/tc-conference-new/issues"
   },
-  "homepage": "https://github.com/dobybros/hyd-example#readme",
-  "dependencies": {
-    "electron": "^11.0.2",
-    "electron-builder": "^22.9.1",
-    "vue": "^2.6.12"
-  },
+  "homepage": "https://github.com/dobybros/tc-conference-new#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.0",
-    "less-loader": "^7.1.0",
-    "url-loader": "^4.1.1",
-    "vue-loader": "^15.9.5",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-component": "^1.1.1",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "hyd-framework": "file:../hyd-framework",
+    "hyd-loader": "file:../acu-web-library/hyd-loader",
+    "lodash": "^4.17.11",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.6.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.4.0"
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^5.0.9"
+  },
+  "dependencies": {
+    "acu-web-library": "file:../acu-web-library",
+    "axios": "^0.20.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "vue": "^2.6.11",
+    "vue-virtual-scroll-list": "^2.3.1"
   }
 }
